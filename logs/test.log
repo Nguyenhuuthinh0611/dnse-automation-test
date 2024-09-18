@@ -760,3 +760,56 @@ Giá trị vốn hoá
 [2024-09-18T15:49:17.621] [DEBUG] default - wake up!
 [2024-09-18T15:49:17.622] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
 [2024-09-18T15:49:17.622] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T17:02:26.418] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T17:02:31.386] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T17:02:31.540] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T17:02:32.550] [DEBUG] default - wake up!
+[2024-09-18T17:02:32.552] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T17:02:32.782] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T17:02:32.784] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T17:02:34.226] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T17:02:38.227] [DEBUG] default - wake up!
+[2024-09-18T17:02:38.249] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T17:02:38.250] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T17:02:38.250] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T17:02:38.607] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T17:02:40.622] [DEBUG] default - wake up!
+[2024-09-18T17:02:40.640] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T17:02:42.655] [DEBUG] default - wake up!
+[2024-09-18T17:02:42.658] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T17:02:42.886] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T17:02:43.894] [DEBUG] default - wake up!
+[2024-09-18T17:02:43.896] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T17:02:43.939] [INFO] default - Share link: https://www.dnse.com.vn/senses/co-phieu-DSE
+[2024-09-18T17:02:43.940] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T17:02:44.029] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T17:02:44.164] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T17:02:46.178] [DEBUG] default - wake up!
+[2024-09-18T17:02:46.209] [INFO] default - Name of top 3rd item searching: VIX
+HOSE - CHỨNG KHOÁN VIX
+
+11.35
+
+0.05
+
+(0.44%)
+
+0.44%
+
+5 ngày
+
+-25.52%
+
+1 năm
+
+17,095.94 tỷ
+
+Giá trị vốn hoá
+[2024-09-18T17:02:46.210] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T17:02:46.210] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T17:02:46.608] [INFO] default - Name of Lable Page : VIX
+[2024-09-18T17:02:46.616] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T17:02:47.094] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T17:02:48.103] [DEBUG] default - wake up!
+[2024-09-18T17:02:48.103] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T17:02:48.104] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')

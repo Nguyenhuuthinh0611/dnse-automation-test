@@ -1,9 +1,9 @@
 import BasePage from "../../base/base-page";
 import logger from "../../ultils/logger";
 import type { Locator, Page } from "@playwright/test";
-import DNSE_HOME_UI from "../ui/dnse-home-ui";
 import { DropdownList } from "../../base/base-widget";
-export default class DnseHomePage extends BasePage {
+import { DNSE_UI } from "../ui/dnse-ui";
+export default class DnsePage extends BasePage {
 	protected _url: string;
 	lblThiTruong: Locator;
 	optSenses: Locator;
@@ -15,25 +15,27 @@ export default class DnseHomePage extends BasePage {
 	btnClosePopUp: Locator;
 	lblItem3rd: Locator;
 	lblPageTop3rdMaChungKhoan: Locator;
+	lnkShare: Locator;
 
 	constructor(page: Page) {
 		super(page);
 		this._url = "https://www.dnse.com.vn/";
 
-		this.lblThiTruong = this.locator(DNSE_HOME_UI.lblThiTruong);
-		this.optSenses = this.locator(DNSE_HOME_UI.optSenses);
-		this.txtSearch = this.locator(DNSE_HOME_UI.txtSearch);
+		this.lblThiTruong = this.locator(DNSE_UI.lblThiTruong);
+		this.optSenses = this.locator(DNSE_UI.optSenses);
+		this.txtSearch = this.locator(DNSE_UI.txtSearch);
 		this.ddlMaChungKhoan = new DropdownList(page, {
-			root: this.locator(DNSE_HOME_UI.ddlMaChungKhoan),
-			trigger: this.locator(DNSE_HOME_UI.otpDSE),
-			rowsLocator: this.locator(DNSE_HOME_UI.otpDSE),
+			root: this.locator(DNSE_UI.ddlMaChungKhoan),
+			trigger: this.locator(DNSE_UI.otpDSE),
+			rowsLocator: this.locator(DNSE_UI.otpDSE),
 		});
-		this.btnShare = this.locator(DNSE_HOME_UI.btnShare);
-		this.btnClosePopUp = this.locator(DNSE_HOME_UI.btnClosePopUp);
-		this.lblItem3rd = this.locator(DNSE_HOME_UI.lblItem3rd);
+		this.btnShare = this.locator(DNSE_UI.btnShare);
+		this.btnClosePopUp = this.locator(DNSE_UI.btnClosePopUp);
+		this.lblItem3rd = this.locator(DNSE_UI.lblItem3rd);
 		this.lblPageTop3rdMaChungKhoan = this.locator(
-			DNSE_HOME_UI.lblPageTop3rdMaChungKhoan,
+			DNSE_UI.lblPageTop3rdMaChungKhoan,
 		);
+		this.lnkShare = this.locator(DNSE_UI.lnkShare);
 	}
 
 	// Actions
@@ -68,6 +70,12 @@ export default class DnseHomePage extends BasePage {
 		await this.click(this.btnShare);
 		await this.sleep(1000);
 		await this.screenshotAndAttach("In ra ma co phieu");
+	}
+
+	async printShareLink() {
+		const shareLink = await this.getInnerText(this.lnkShare);
+		logger.info(`Share link: ${shareLink}`);
+		return shareLink;
 	}
 
 	async closePopUp() {
