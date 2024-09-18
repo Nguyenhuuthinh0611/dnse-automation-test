@@ -1,0 +1,762 @@
+[2024-09-18T14:09:44.867] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:09:49.790] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:17:15.583] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:17:17.866] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:17:18.016] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:17:19.023] [DEBUG] default - wake up!
+[2024-09-18T14:17:19.024] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:17:19.216] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:17:19.216] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:17:19.513] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:17:21.515] [DEBUG] default - wake up!
+[2024-09-18T14:17:21.516] [DEBUG] default - Clicking element by selector: undefined
+[2024-09-18T14:17:21.525] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'click')
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:32)
+    at DnseHomePage.search (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:56:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:8:2
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:338:9
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:285:11
+    at TimeoutManager.withRunnable (c:\dnse-automation-test\node_modules\playwright\lib\worker\timeoutManager.js:63:14)
+    at TestInfoImpl._runAsStage (c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:283:7)
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:330:7
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:285:11
+    at TimeoutManager.withRunnable (c:\dnse-automation-test\node_modules\playwright\lib\worker\timeoutManager.js:51:27)
+    at TestInfoImpl._runAsStage (c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:283:7)
+    at WorkerMain._runTest (c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:280:5)
+    at WorkerMain.runTestGroup (c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:204:11)
+    at process.<anonymous> (c:\dnse-automation-test\node_modules\playwright\lib\common\process.js:95:22)
+[2024-09-18T14:17:21.528] [DEBUG] default - Selecting "DSE" from dropdownlist locator('//div[@data-testid=\'modal-result\']//li').
+[2024-09-18T14:17:21.573] [DEBUG] default - Opening dropdownlist locator('//div[@data-testid=\'modal-result\']//li').
+[2024-09-18T14:17:21.574] [DEBUG] default - Clicking element by selector: locator('//div[@data-testid=\'modal-result\']//li')
+[2024-09-18T14:17:46.025] [ERROR] default - locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  [2m- waiting for locator('//div[@data-testid=\'modal-result\']//li')[22m
+
+    at DropdownList.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DropdownList.open (c:\dnse-automation-test\src\base\base-widget.ts:146:14)
+    at DropdownList.selectByText (c:\dnse-automation-test\src\base\base-widget.ts:177:3)
+    at DnseHomePage.navigateToPageChungKhoanDetail (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:60:3)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:9:2 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@17',
+    location: {
+      file: 'c:\\dnse-automation-test\\src\\base\\base-component.ts',
+      line: 118,
+      column: 33,
+      function: 'DropdownList.click'
+    },
+    category: 'pw:api',
+    title: "locator.click(//div[@data-testid='modal-result']//li)",
+    apiName: 'locator.click',
+    params: {
+      selector: "//div[@data-testid='modal-result']//li",
+      strict: true,
+      force: undefined
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1726643866024,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//div[@data-testid=\\'modal-result\\']//li')\x1B[22m\n",
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//div[@data-testid=\\'modal-result\\']//li')\x1B[22m\n" +
+        '\n' +
+        '    at DropdownList.click (c:\\dnse-automation-test\\src\\base\\base-component.ts:118:33)\n' +
+        '    at DropdownList.open (c:\\dnse-automation-test\\src\\base\\base-widget.ts:146:14)\n' +
+        '    at DropdownList.selectByText (c:\\dnse-automation-test\\src\\base\\base-widget.ts:177:3)\n' +
+        '    at DnseHomePage.navigateToPageChungKhoanDetail (c:\\dnse-automation-test\\src\\pom\\pages\\dnse-home-page.ts:60:3)\n' +
+        '    at c:\\dnse-automation-test\\tests\\dnse-examination.spec.ts:9:2'
+    }
+  }
+}
+[2024-09-18T14:17:46.032] [DEBUG] default - Sleeping for: 5000...
+[2024-09-18T14:19:38.753] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:19:40.915] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:19:41.060] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:19:42.064] [DEBUG] default - wake up!
+[2024-09-18T14:19:42.066] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:19:42.279] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:19:42.280] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:19:43.631] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:19:47.643] [DEBUG] default - wake up!
+[2024-09-18T14:19:47.645] [DEBUG] default - Clicking element by selector: undefined
+[2024-09-18T14:19:47.646] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'click')
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:32)
+    at DnseHomePage.search (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:56:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:8:2
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:338:9
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:285:11
+    at TimeoutManager.withRunnable (c:\dnse-automation-test\node_modules\playwright\lib\worker\timeoutManager.js:63:14)
+    at TestInfoImpl._runAsStage (c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:283:7)
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:330:7
+    at c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:285:11
+    at TimeoutManager.withRunnable (c:\dnse-automation-test\node_modules\playwright\lib\worker\timeoutManager.js:51:27)
+    at TestInfoImpl._runAsStage (c:\dnse-automation-test\node_modules\playwright\lib\worker\testInfo.js:283:7)
+    at WorkerMain._runTest (c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:280:5)
+    at WorkerMain.runTestGroup (c:\dnse-automation-test\node_modules\playwright\lib\worker\workerMain.js:204:11)
+    at process.<anonymous> (c:\dnse-automation-test\node_modules\playwright\lib\common\process.js:95:22)
+[2024-09-18T14:19:47.649] [DEBUG] default - Selecting "DSE" from dropdownlist locator('//div[@data-testid=\'modal-result\']//li').
+[2024-09-18T14:20:58.608] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:21:00.839] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:21:01.030] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:21:02.045] [DEBUG] default - wake up!
+[2024-09-18T14:21:02.046] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:21:02.262] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:21:02.264] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:21:03.657] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:21:07.670] [DEBUG] default - wake up!
+[2024-09-18T14:21:07.675] [DEBUG] default - Selecting "DSE" from dropdownlist locator('//div[@data-testid=\'modal-result\']//li').
+[2024-09-18T14:21:53.839] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:21:56.007] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:21:56.175] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:21:57.184] [DEBUG] default - wake up!
+[2024-09-18T14:21:57.186] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:21:57.365] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:21:57.365] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:21:58.555] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:22:02.559] [DEBUG] default - wake up!
+[2024-09-18T14:24:16.155] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:24:18.322] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:24:18.431] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:24:19.432] [DEBUG] default - wake up!
+[2024-09-18T14:24:19.436] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:24:19.706] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:24:19.706] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:24:21.162] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:24:25.162] [DEBUG] default - wake up!
+[2024-09-18T14:36:30.919] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:36:35.794] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:36:35.911] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:36:36.917] [DEBUG] default - wake up!
+[2024-09-18T14:36:36.921] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:36:37.102] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:36:37.103] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:36:38.191] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:36:42.198] [DEBUG] default - wake up!
+[2024-09-18T14:40:55.128] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:40:57.352] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:40:57.551] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:40:58.557] [DEBUG] default - wake up!
+[2024-09-18T14:40:58.557] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:40:58.741] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:40:58.742] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:40:59.983] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:41:03.986] [DEBUG] default - wake up!
+[2024-09-18T14:43:18.807] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:43:20.987] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:43:21.181] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:43:22.192] [DEBUG] default - wake up!
+[2024-09-18T14:43:22.193] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:43:22.372] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:43:22.373] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:43:23.926] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:43:27.932] [DEBUG] default - wake up!
+[2024-09-18T14:44:13.539] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:44:15.631] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:44:15.777] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:44:16.790] [DEBUG] default - wake up!
+[2024-09-18T14:44:16.793] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:44:17.053] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:44:17.054] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:44:18.316] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:44:22.323] [DEBUG] default - wake up!
+[2024-09-18T14:44:22.346] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T14:44:22.347] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T14:44:22.347] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T14:44:22.751] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:44:24.760] [DEBUG] default - wake up!
+[2024-09-18T14:44:24.771] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:44:26.781] [DEBUG] default - wake up!
+[2024-09-18T14:44:26.782] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:44:26.958] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:44:27.961] [DEBUG] default - wake up!
+[2024-09-18T14:44:27.962] [INFO] default - Taking screenshot and attaching: Share after...
+[2024-09-18T14:44:27.963] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T14:44:28.063] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T14:44:28.064] [DEBUG] default - Pressing key: Backspace
+[2024-09-18T14:44:28.097] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T14:44:28.098] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T14:44:44.094] [ERROR] default - locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  [2m- waiting for locator('//button[@data-category=\'Top_search\'][3]')[22m
+
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DnseHomePage.selectTop3rdItemSearching (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:77:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:16:21 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@21',
+    location: {
+      file: 'c:\\dnse-automation-test\\src\\base\\base-component.ts',
+      line: 118,
+      column: 33,
+      function: 'DnseHomePage.click'
+    },
+    category: 'pw:api',
+    title: "locator.click(//button[@data-category='Top_search'][3])",
+    apiName: 'locator.click',
+    params: {
+      selector: "//button[@data-category='Top_search'][3]",
+      strict: true,
+      force: undefined
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1726645484094,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//button[@data-category=\\'Top_search\\'][3]')\x1B[22m\n",
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//button[@data-category=\\'Top_search\\'][3]')\x1B[22m\n" +
+        '\n' +
+        '    at DnseHomePage.click (c:\\dnse-automation-test\\src\\base\\base-component.ts:118:33)\n' +
+        '    at DnseHomePage.selectTop3rdItemSearching (c:\\dnse-automation-test\\src\\pom\\pages\\dnse-home-page.ts:77:14)\n' +
+        '    at c:\\dnse-automation-test\\tests\\dnse-examination.spec.ts:16:21'
+    }
+  }
+}
+[2024-09-18T14:44:44.100] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:44:44.104] [ERROR] default - locator.click: Target page, context or browser has been closed
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DnseHomePage.clickToShare (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:64:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:17:21 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@25',
+    location: {
+      file: 'c:\\dnse-automation-test\\src\\base\\base-component.ts',
+      line: 118,
+      column: 33,
+      function: 'DnseHomePage.click'
+    },
+    category: 'pw:api',
+    title: "locator.click(//p[contains(text(), 'Chia sẻ')])",
+    apiName: 'locator.click',
+    params: {
+      selector: "//p[contains(text(), 'Chia sẻ')]",
+      strict: true,
+      force: undefined
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1726645484104,
+    error: {
+      message: 'Error: locator.click: Target page, context or browser has been closed',
+      stack: 'Error: locator.click: Target page, context or browser has been closed\n' +
+        '    at DnseHomePage.click (c:\\dnse-automation-test\\src\\base\\base-component.ts:118:33)\n' +
+        '    at DnseHomePage.clickToShare (c:\\dnse-automation-test\\src\\pom\\pages\\dnse-home-page.ts:64:14)\n' +
+        '    at c:\\dnse-automation-test\\tests\\dnse-examination.spec.ts:17:21'
+    }
+  }
+}
+[2024-09-18T14:44:44.105] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:45:45.665] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:45:47.804] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:45:47.954] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:45:48.963] [DEBUG] default - wake up!
+[2024-09-18T14:45:48.963] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:45:49.242] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:45:49.243] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:45:50.881] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:45:54.888] [DEBUG] default - wake up!
+[2024-09-18T14:45:54.921] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T14:45:54.922] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T14:45:54.922] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T14:45:55.331] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:45:57.337] [DEBUG] default - wake up!
+[2024-09-18T14:45:57.350] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:45:59.357] [DEBUG] default - wake up!
+[2024-09-18T14:45:59.361] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:45:59.574] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:46:00.577] [DEBUG] default - wake up!
+[2024-09-18T14:46:00.578] [INFO] default - Taking screenshot and attaching: Share after...
+[2024-09-18T14:46:00.579] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T14:46:00.691] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T14:46:00.692] [DEBUG] default - Pressing key: Backspace
+[2024-09-18T14:46:00.720] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T14:46:00.721] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T14:48:16.186] [ERROR] default - locator.click: Test timeout of 150000ms exceeded.
+Call log:
+  [2m- waiting for locator('//button[@data-category=\'Top_search\'][3]')[22m
+
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DnseHomePage.selectTop3rdItemSearching (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:77:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:17:21 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@21',
+    location: {
+      file: 'c:\\dnse-automation-test\\src\\base\\base-component.ts',
+      line: 118,
+      column: 33,
+      function: 'DnseHomePage.click'
+    },
+    category: 'pw:api',
+    title: "locator.click(//button[@data-category='Top_search'][3])",
+    apiName: 'locator.click',
+    params: {
+      selector: "//button[@data-category='Top_search'][3]",
+      strict: true,
+      force: undefined
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1726645696186,
+    error: {
+      message: 'Error: locator.click: Test timeout of 150000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//button[@data-category=\\'Top_search\\'][3]')\x1B[22m\n",
+      stack: 'Error: locator.click: Test timeout of 150000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//button[@data-category=\\'Top_search\\'][3]')\x1B[22m\n" +
+        '\n' +
+        '    at DnseHomePage.click (c:\\dnse-automation-test\\src\\base\\base-component.ts:118:33)\n' +
+        '    at DnseHomePage.selectTop3rdItemSearching (c:\\dnse-automation-test\\src\\pom\\pages\\dnse-home-page.ts:77:14)\n' +
+        '    at c:\\dnse-automation-test\\tests\\dnse-examination.spec.ts:17:21'
+    }
+  }
+}
+[2024-09-18T14:48:16.191] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:48:16.195] [ERROR] default - locator.click: Target page, context or browser has been closed
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DnseHomePage.clickToShare (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:64:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:18:21
+[2024-09-18T14:48:16.195] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:48:20.140] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:48:22.383] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:48:22.511] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:48:23.526] [DEBUG] default - wake up!
+[2024-09-18T14:48:23.527] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:48:23.715] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:48:23.716] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:48:24.850] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:48:28.850] [DEBUG] default - wake up!
+[2024-09-18T14:48:28.872] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T14:48:28.873] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T14:48:28.873] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T14:48:29.188] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:48:31.195] [DEBUG] default - wake up!
+[2024-09-18T14:48:31.203] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:48:33.218] [DEBUG] default - wake up!
+[2024-09-18T14:48:33.220] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:48:33.362] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:48:34.372] [DEBUG] default - wake up!
+[2024-09-18T14:48:34.373] [INFO] default - Taking screenshot and attaching: Share after...
+[2024-09-18T14:48:34.373] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T14:48:34.451] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T14:48:34.451] [DEBUG] default - Pressing key: Backspace
+[2024-09-18T14:48:34.475] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T14:48:34.475] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T14:49:20.702] [ERROR] default - locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('//button[@data-category=\'Top_search\'][3]')[22m
+
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DnseHomePage.selectTop3rdItemSearching (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:77:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:17:21 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@21',
+    location: {
+      file: 'c:\\dnse-automation-test\\src\\base\\base-component.ts',
+      line: 118,
+      column: 33,
+      function: 'DnseHomePage.click'
+    },
+    category: 'pw:api',
+    title: "locator.click(//button[@data-category='Top_search'][3])",
+    apiName: 'locator.click',
+    params: {
+      selector: "//button[@data-category='Top_search'][3]",
+      strict: true,
+      force: undefined
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1726645760701,
+    error: {
+      message: 'Error: locator.click: Test timeout of 60000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//button[@data-category=\\'Top_search\\'][3]')\x1B[22m\n",
+      stack: 'Error: locator.click: Test timeout of 60000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//button[@data-category=\\'Top_search\\'][3]')\x1B[22m\n" +
+        '\n' +
+        '    at DnseHomePage.click (c:\\dnse-automation-test\\src\\base\\base-component.ts:118:33)\n' +
+        '    at DnseHomePage.selectTop3rdItemSearching (c:\\dnse-automation-test\\src\\pom\\pages\\dnse-home-page.ts:77:14)\n' +
+        '    at c:\\dnse-automation-test\\tests\\dnse-examination.spec.ts:17:21'
+    }
+  }
+}
+[2024-09-18T14:49:20.706] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:49:20.710] [ERROR] default - locator.click: Target page, context or browser has been closed
+    at DnseHomePage.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DnseHomePage.clickToShare (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:64:14)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:18:21
+[2024-09-18T14:49:20.710] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:52:52.591] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:52:54.842] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:52:55.025] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:52:56.036] [DEBUG] default - wake up!
+[2024-09-18T14:52:56.038] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:52:56.258] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:52:56.259] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:52:57.576] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:53:01.577] [DEBUG] default - wake up!
+[2024-09-18T14:53:01.617] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T14:53:01.618] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T14:53:01.618] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T14:53:01.913] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:53:03.917] [DEBUG] default - wake up!
+[2024-09-18T14:53:03.938] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:53:05.939] [DEBUG] default - wake up!
+[2024-09-18T14:53:05.941] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:53:06.085] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:53:07.094] [DEBUG] default - wake up!
+[2024-09-18T14:53:07.096] [INFO] default - Taking screenshot and attaching: Share after...
+[2024-09-18T14:53:07.097] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T14:53:07.218] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T14:53:07.377] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T14:53:07.378] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T14:53:07.803] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]')
+[2024-09-18T14:53:08.482] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:53:09.497] [DEBUG] default - wake up!
+[2024-09-18T14:53:09.498] [INFO] default - Taking screenshot and attaching: Share2 after...
+[2024-09-18T14:56:01.029] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:56:03.225] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:56:03.408] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:56:04.412] [DEBUG] default - wake up!
+[2024-09-18T14:56:04.414] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:56:04.614] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:56:04.615] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:56:05.231] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:56:09.238] [DEBUG] default - wake up!
+[2024-09-18T14:56:09.269] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T14:56:09.269] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T14:57:01.439] [ERROR] default - locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('//li[@data-testid=\'symbol-DSE\']')[22m
+
+    at DropdownList.click (c:\dnse-automation-test\src\base\base-component.ts:118:33)
+    at DropdownList.open (c:\dnse-automation-test\src\base\base-widget.ts:146:14)
+    at DropdownList.selectByContainingText (c:\dnse-automation-test\src\base\base-widget.ts:204:3)
+    at DnseHomePage.navigateToPageChungKhoanDetail (c:\dnse-automation-test\src\pom\pages\dnse-home-page.ts:59:3)
+    at c:\dnse-automation-test\tests\dnse-examination.spec.ts:10:2 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@17',
+    location: {
+      file: 'c:\\dnse-automation-test\\src\\base\\base-component.ts',
+      line: 118,
+      column: 33,
+      function: 'DropdownList.click'
+    },
+    category: 'pw:api',
+    title: "locator.click(//li[@data-testid='symbol-DSE'])",
+    apiName: 'locator.click',
+    params: {
+      selector: "//li[@data-testid='symbol-DSE']",
+      strict: true,
+      force: undefined
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1726646221439,
+    error: {
+      message: 'Error: locator.click: Test timeout of 60000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//li[@data-testid=\\'symbol-DSE\\']')\x1B[22m\n",
+      stack: 'Error: locator.click: Test timeout of 60000ms exceeded.\n' +
+        'Call log:\n' +
+        "  \x1B[2m- waiting for locator('//li[@data-testid=\\'symbol-DSE\\']')\x1B[22m\n" +
+        '\n' +
+        '    at DropdownList.click (c:\\dnse-automation-test\\src\\base\\base-component.ts:118:33)\n' +
+        '    at DropdownList.open (c:\\dnse-automation-test\\src\\base\\base-widget.ts:146:14)\n' +
+        '    at DropdownList.selectByContainingText (c:\\dnse-automation-test\\src\\base\\base-widget.ts:204:3)\n' +
+        '    at DnseHomePage.navigateToPageChungKhoanDetail (c:\\dnse-automation-test\\src\\pom\\pages\\dnse-home-page.ts:59:3)\n' +
+        '    at c:\\dnse-automation-test\\tests\\dnse-examination.spec.ts:10:2'
+    }
+  }
+}
+[2024-09-18T14:57:01.443] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:57:27.331] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T14:57:29.421] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T14:57:29.536] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:57:30.543] [DEBUG] default - wake up!
+[2024-09-18T14:57:30.545] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T14:57:30.799] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T14:57:30.799] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T14:57:32.290] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T14:57:36.300] [DEBUG] default - wake up!
+[2024-09-18T14:57:36.335] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T14:57:36.336] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T14:57:36.336] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T14:57:36.677] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:57:38.687] [DEBUG] default - wake up!
+[2024-09-18T14:57:38.702] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T14:57:40.718] [DEBUG] default - wake up!
+[2024-09-18T14:57:40.720] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T14:57:40.918] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:57:41.931] [DEBUG] default - wake up!
+[2024-09-18T14:57:41.933] [INFO] default - Taking screenshot and attaching: Share after...
+[2024-09-18T14:57:41.935] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T14:57:42.049] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T14:57:42.204] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T14:57:42.204] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T14:57:42.358] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T14:57:43.018] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T14:57:44.020] [DEBUG] default - wake up!
+[2024-09-18T14:57:44.021] [INFO] default - Taking screenshot and attaching: Share2 after...
+[2024-09-18T15:02:41.512] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T15:02:43.773] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T15:02:43.999] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:02:45.017] [DEBUG] default - wake up!
+[2024-09-18T15:02:45.018] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T15:02:45.233] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T15:02:45.233] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T15:02:46.586] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T15:02:50.589] [DEBUG] default - wake up!
+[2024-09-18T15:02:50.609] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T15:02:50.610] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T15:02:50.610] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T15:02:50.893] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:02:52.897] [DEBUG] default - wake up!
+[2024-09-18T15:02:52.913] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:02:54.928] [DEBUG] default - wake up!
+[2024-09-18T15:02:54.932] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:02:55.110] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:02:56.114] [DEBUG] default - wake up!
+[2024-09-18T15:02:56.115] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:02:56.116] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:02:56.217] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T15:02:56.386] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:02:58.389] [DEBUG] default - wake up!
+[2024-09-18T15:02:58.391] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T15:02:58.393] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T15:02:58.626] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:02:59.193] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:03:00.197] [DEBUG] default - wake up!
+[2024-09-18T15:03:00.198] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:03:00.198] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:17:42.182] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T15:17:47.066] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T15:17:47.177] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:17:48.191] [DEBUG] default - wake up!
+[2024-09-18T15:17:48.193] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T15:17:48.460] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T15:17:48.460] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T15:17:49.661] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T15:17:53.663] [DEBUG] default - wake up!
+[2024-09-18T15:17:53.686] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T15:17:53.686] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T15:17:53.686] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T15:17:53.968] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:17:55.975] [DEBUG] default - wake up!
+[2024-09-18T15:17:55.989] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:17:57.996] [DEBUG] default - wake up!
+[2024-09-18T15:17:57.997] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:17:58.197] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:17:59.198] [DEBUG] default - wake up!
+[2024-09-18T15:17:59.199] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:17:59.199] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:17:59.310] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T15:17:59.436] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:18:01.446] [DEBUG] default - wake up!
+[2024-09-18T15:18:01.447] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T15:18:01.448] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T15:18:01.729] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:18:02.142] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:18:03.155] [DEBUG] default - wake up!
+[2024-09-18T15:18:03.156] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:18:03.157] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:18:26.437] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T15:18:28.524] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T15:18:28.708] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:18:29.710] [DEBUG] default - wake up!
+[2024-09-18T15:18:29.720] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T15:18:30.018] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T15:18:30.020] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T15:18:31.417] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T15:18:35.429] [DEBUG] default - wake up!
+[2024-09-18T15:18:35.486] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T15:18:35.487] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T15:18:35.487] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T15:18:35.945] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:18:37.954] [DEBUG] default - wake up!
+[2024-09-18T15:18:37.965] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:18:39.975] [DEBUG] default - wake up!
+[2024-09-18T15:18:39.977] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:18:40.273] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:18:41.283] [DEBUG] default - wake up!
+[2024-09-18T15:18:41.284] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:18:41.285] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:18:41.384] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T15:18:41.563] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:18:43.575] [DEBUG] default - wake up!
+[2024-09-18T15:18:43.575] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T15:18:43.576] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T15:18:43.895] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:18:44.506] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:18:45.520] [DEBUG] default - wake up!
+[2024-09-18T15:18:45.520] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:18:45.521] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:28:31.019] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T15:28:35.835] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T15:28:36.018] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:28:37.025] [DEBUG] default - wake up!
+[2024-09-18T15:28:37.028] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T15:28:37.203] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T15:28:37.203] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T15:28:38.384] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T15:28:42.391] [DEBUG] default - wake up!
+[2024-09-18T15:28:42.420] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T15:28:42.420] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T15:28:42.420] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T15:28:42.773] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:28:44.779] [DEBUG] default - wake up!
+[2024-09-18T15:28:44.792] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:28:46.803] [DEBUG] default - wake up!
+[2024-09-18T15:28:46.810] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:28:47.005] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:28:48.018] [DEBUG] default - wake up!
+[2024-09-18T15:28:48.018] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:28:48.019] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:28:48.102] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T15:28:48.285] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:28:50.297] [DEBUG] default - wake up!
+[2024-09-18T15:28:50.312] [INFO] default - Name of top 3rd item searching: VIX
+HOSE - CHỨNG KHOÁN VIX
+
+11.35
+
+0.05
+
+(0.44%)
+
+0.44%
+
+5 ngày
+
+-25.52%
+
+1 năm
+
+17,095.94 tỷ
+
+Giá trị vốn hoá
+[2024-09-18T15:28:50.313] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T15:28:50.313] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T15:28:50.375] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:28:50.981] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:28:51.993] [DEBUG] default - wake up!
+[2024-09-18T15:28:51.993] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:28:51.994] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:47:38.568] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T15:47:43.517] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T15:47:43.611] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:47:44.625] [DEBUG] default - wake up!
+[2024-09-18T15:47:44.628] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T15:47:44.818] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T15:47:44.819] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T15:47:46.014] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T15:47:50.017] [DEBUG] default - wake up!
+[2024-09-18T15:47:50.047] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T15:47:50.048] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T15:47:50.048] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T15:47:50.361] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:47:52.373] [DEBUG] default - wake up!
+[2024-09-18T15:47:52.379] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:47:54.382] [DEBUG] default - wake up!
+[2024-09-18T15:47:54.384] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:47:54.561] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:47:55.567] [DEBUG] default - wake up!
+[2024-09-18T15:47:55.568] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:47:55.569] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:47:55.659] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T15:47:55.820] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:47:57.833] [DEBUG] default - wake up!
+[2024-09-18T15:47:57.849] [INFO] default - Name of top 3rd item searching: VIX
+HOSE - CHỨNG KHOÁN VIX
+
+11.35
+
+0.05
+
+(0.44%)
+
+0.44%
+
+5 ngày
+
+-25.52%
+
+1 năm
+
+17,095.94 tỷ
+
+Giá trị vốn hoá
+[2024-09-18T15:47:57.850] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T15:47:57.850] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T15:47:58.186] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:47:58.647] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:47:59.657] [DEBUG] default - wake up!
+[2024-09-18T15:47:59.659] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:47:59.660] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:48:59.074] [INFO] default - Self navigating to: https://www.dnse.com.vn/
+[2024-09-18T15:49:01.186] [INFO] default - Taking screenshot and attaching: Self navigate to: https://www.dnse.com.vn/ after...
+[2024-09-18T15:49:01.293] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:49:02.302] [DEBUG] default - wake up!
+[2024-09-18T15:49:02.304] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'header-menu-item-senses\']')
+[2024-09-18T15:49:02.583] [DEBUG] default - Filling element by selector: locator('//input[@data-testid=\'input-search-symbol\']') with text: DS
+[2024-09-18T15:49:02.583] [DEBUG] default - Clicking element by selector: locator('//input[@data-testid=\'input-search-symbol\']')
+[2024-09-18T15:49:03.918] [DEBUG] default - Sleeping for: 4000...
+[2024-09-18T15:49:07.922] [DEBUG] default - wake up!
+[2024-09-18T15:49:07.955] [DEBUG] default - Dropdownlist root locator('//li[@data-testid=\'symbol-DSE\']') is not hidden.
+[2024-09-18T15:49:07.955] [DEBUG] default - Opening dropdownlist locator('//li[@data-testid=\'symbol-DSE\']').
+[2024-09-18T15:49:07.955] [DEBUG] default - Clicking element by selector: locator('//li[@data-testid=\'symbol-DSE\']')
+[2024-09-18T15:49:08.287] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:49:10.300] [DEBUG] default - wake up!
+[2024-09-18T15:49:10.312] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:49:12.320] [DEBUG] default - wake up!
+[2024-09-18T15:49:12.325] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:49:12.499] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:49:13.504] [DEBUG] default - wake up!
+[2024-09-18T15:49:13.505] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:49:13.506] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
+[2024-09-18T15:49:13.586] [INFO] default - Taking screenshot and attaching: ClosePopUp after...
+[2024-09-18T15:49:13.730] [DEBUG] default - Sleeping for: 2000...
+[2024-09-18T15:49:15.745] [DEBUG] default - wake up!
+[2024-09-18T15:49:15.791] [INFO] default - Name of top 3rd item searching: VIX
+HOSE - CHỨNG KHOÁN VIX
+
+11.35
+
+0.05
+
+(0.44%)
+
+0.44%
+
+5 ngày
+
+-25.52%
+
+1 năm
+
+17,095.94 tỷ
+
+Giá trị vốn hoá
+[2024-09-18T15:49:15.791] [INFO] default - Taking screenshot and attaching: BackToPreviousPage after...
+[2024-09-18T15:49:15.792] [DEBUG] default - Clicking element by selector: locator('//button[@data-category=\'Top_search\'][3]')
+[2024-09-18T15:49:16.139] [INFO] default - Name of Lable Page : VIX
+[2024-09-18T15:49:16.142] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..')
+[2024-09-18T15:49:16.620] [DEBUG] default - Sleeping for: 1000...
+[2024-09-18T15:49:17.621] [DEBUG] default - wake up!
+[2024-09-18T15:49:17.622] [INFO] default - Taking screenshot and attaching: In ra ma co phieu after...
+[2024-09-18T15:49:17.622] [DEBUG] default - Clicking element by selector: locator('//p[contains(text(), \'Chia sẻ\')]/..//button')
