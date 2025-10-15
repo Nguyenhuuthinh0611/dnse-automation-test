@@ -1,18 +1,29 @@
-import { test, expect } from '@playwright/test';
+// Create an input element for file upload
+const inputElement = document.createElement('input');
+inputElement.type = 'file';
+inputElement.accept = '.xlsx, .xls'; // Accept Excel files
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+// Add an event listener to handle file selection
+inputElement.addEventListener('change', (event: Event) => {
+    const target = event.target as HTMLInputElement;
+    if (target.files && target.files.length > 0) {
+        const file = target.files[0];
+        const filePath = '\\Users\\ADMIN\\Downloads\\BÁO CÁO KQKD FX LONG BIÊN  2025 ( Lũy kế 10.10.2025)';
+        console.log('File path:', filePath);
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
+        const reader = new FileReader();
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+        // Read the file as binary string
+        reader.onload = (e: ProgressEvent<FileReader>) => {
+            const data = e.target?.result;
+            if (data) {
+            console.log('File uploaded successfully:', filePath);
+            // Process the Excel file data here
+            }
+        };
 
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+        reader.onerror = (e) => {
+            console.error('Error reading file:', e);
+        };
 
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-});
+        reader.readAsBinaryString(file);
